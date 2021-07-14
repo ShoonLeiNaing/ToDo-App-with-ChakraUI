@@ -31,7 +31,7 @@ function TodoList({todos,deleteTodos}) {
     >
       {todos.map((todo) => (
         <HStack key={todo.id}>
-          <Text>{todo.title}</Text>
+          <Text fontSize='xl'>{todo.title}</Text>
           <Spacer/>
           <IconButton icon={<FaTrash />} isRound="true" onClick={()=>deleteTodos(todo.id)} />
         </HStack>
